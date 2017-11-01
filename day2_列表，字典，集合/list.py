@@ -6,6 +6,7 @@ data=['0','1','2','3','4','5','6','7','8']
 print(data)
 print(data[1])
 print(data[2:5])
+print(data[1:7:2])
 print(data[5:])
 print(data[-1])
 print(data[-2:])
@@ -53,7 +54,11 @@ print(data)
 del data2 #删除变量
 print(data2)
 
-data2=data.copy()
+data2=data.copy() #复制列表，浅复制，只复制第一层，如果列表里有列表，则复制的时候只复制里边列表的地址。
 print(data2)
 
+#如果要实现深copy，则要引入
+import copy
+
+name2=copy.deepcopy(name)
 
