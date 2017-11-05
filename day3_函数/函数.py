@@ -37,3 +37,8 @@ def test5(x,y=3,*args,**kwargs):
     print(kwargs)
 test5(1,2,3,4,5,name=3,age=5,sex='f')
 
+#匿名函数：
+
+calc = lambda n : print(n+2)
+calc(5)
+
